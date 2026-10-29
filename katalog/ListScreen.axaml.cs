@@ -105,7 +105,6 @@ public partial class ListScreen : UserControl
 
     private void OpenAddScreen()
     {
-        // Ekran formularza dodawania zostanie podłączony w etapie formularza
-        StatusText.Text = "Przejście do formularza dodawania.";
+        MainWindow.Instance?.SetScreen(new AddScreen());
     }
 }
