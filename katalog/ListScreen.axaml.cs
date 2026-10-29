@@ -95,8 +95,7 @@ public partial class ListScreen : UserControl
 
     private void OpenDetailsScreen(CatalogItem item)
     {
-        // Ekran szczegółów zostanie podłączony w etapie eksperymentu
-        StatusText.Text = $"Wybrano: {item.Title}";
+        MainWindow.Instance?.SetScreen(new DetailsScreen(item));
     }
 
     private void OnAddClick(object? sender, RoutedEventArgs e)
