@@ -107,4 +107,11 @@ public partial class ListScreen : UserControl
     {
         MainWindow.Instance?.SetScreen(new AddScreen());
     }
+
+    private void OnCountClick(object? sender, RoutedEventArgs e)
+    {
+        string filePath = GetDataFilePath();
+        var lines = File.ReadAllLines(filePath);
+        CountText.Text = $"Pozycji w pliku: {lines.Length}";
+    }
 }

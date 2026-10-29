@@ -16,5 +16,10 @@
             <Button Name="AddButton" Content="Dodaj nową pozycję" Click="OnAddClick" />
         </StackPanel>
 
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button Click="OnCountClick">Policz</Button>
+            <TextBlock Name="CountText" VerticalAlignment="Center" />
+        </StackPanel>
+
     </StackPanel>
 </UserControl>
